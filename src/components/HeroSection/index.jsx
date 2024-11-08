@@ -3,9 +3,9 @@ const HeroSection = () => {
     return (
         <section className="hero">
             <div className="hero-overlay">
-                <h1>Welcome to this website</h1>
+                <h1>Exciting Wines, too good to bottle</h1>
                 <p>The journey starts here</p>
-                <button className="cta-btn">Shop</button>
+                <button className="cta-btn">Shop all wines</button>
             </div>
         </section>
     );
