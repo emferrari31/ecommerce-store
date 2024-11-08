@@ -1,0 +1,53 @@
+/* Hero.css */
+.hero {
+    position: relative;
+    background-image: url('public/pixabayWineB.jpg'); /* The background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Full viewport height */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+    color: white; /* White text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem; /* Large text size for the heading */
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem; /* Subheading size */
+    margin: 20px 0;
+}
+
+.cta-btn {
+    background-color: #ff6347; /* Button color */
+    color: white; /* Text color inside the button */
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff4500; /* Darker button color on hover */
+}
