@@ -1,0 +1,10 @@
+.stockist-section {
+    background-color: lightgoldenrodyellow;
+    padding: 30px;
+}
+.brand-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
