@@ -1,0 +1,17 @@
+.iconsSection {
+    background-color: #fffdf6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  /* Aligns items vertically in the center */
+    width: 100%;  /* Ensures the icons are spaced across the full width of the container */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.icon1,.icon2, .icon3, .icons > div {
+    display: flex;
+    flex-direction: column;  /* Stacks the icon and text vertically */
+    align-items: center;  /* Centers the icon and text horizontally */
+    text-align: center;  /* Ensures text is centered under the icon */
+}

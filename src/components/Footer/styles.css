@@ -1,0 +1,54 @@
+/* Footer styles (Footer.css) */
+.footer {
+    background-color: #142c33;
+    padding: 50px;
+    color: white;
+    display: flex;
+}
+
+.footer a {
+    color: white !important;  /* Override default link color */
+    text-decoration: none !important;  /* Remove underline */
+}
+
+.footer a:visited {
+    color: white !important;  /* Visited links remain white */
+}
+
+.footer a:hover {
+    color: #ffccff !important;  /* Change color on hover */
+}
+
+.footer a:focus {
+    color: #ffccff !important;  /* Focus color */
+    outline: none;  /* Remove default outline */
+}
+
+/* Optional: Ensure paragraph text is aligned */
+.col2 p {
+    text-align: left;
+}
+.col3 {
+    margin-left: 20px;
+}
+
+.nameEthos {
+    display: flex;
+    flex-direction: column;
+}
+.col1 {
+    margin-left: 50px;
+}
+ul {
+    flex-direction: column;
+}
+.footer-logos {
+    display: flex;
+    justify-content: space-evenly;
+}
+.butterfly-logo {
+    width: 70px;
+}
+.drink-aware-logo {
+    width: 170px;
+}

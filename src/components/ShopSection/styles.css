@@ -1,13 +1,31 @@
-h1 {
-    text-align: center;
-}
-p {
-    text-align: center;
-}
-
 /* ShopSection CSS */
 .shop-section {
     padding: 20px;
+    background-color: #fffdf6;
+}
+
+h1 {
+    text-align: center;
+    /*padding-bottom: 30px;*/
+
+}
+.purple-underline-container {
+    display: flex;
+    justify-content: center;
+}
+.purple-underline {
+    width: 100px;
+}
+
+.shop-section p {
+    text-align: center;
+    line-height: 31px; /* Optional: Adjust line height for readability */
+    padding-bottom: 20px;
+    padding-left: 328px;
+    padding-right: 320px;
+}
+.shop-section h3 {
+    color: #3d7e8f;
 }
 
 .product-list {
@@ -17,10 +35,8 @@ p {
 }
 
 .product-card {
-    background-color: #fff;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -48,12 +64,12 @@ p {
 
 }
 .view-full-btn {
-    background-color: #ff6347; /* Button color */
+    background-color: #042D45; /* Button color */
     color: white; /* Text color inside the button */
     border: none;
     padding: 12px 30px;
     font-size: 1.2rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background-color 0.3s ease;
 }

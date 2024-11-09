@@ -1,0 +1,42 @@
+.circle-image {
+    width: 500px;
+    height: auto;
+}
+
+.sustain-section {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    background-color: #e3f8f3;
+    /*border: 1px solid black;*/
+    align-items: center; /* Align items vertically in the middle */
+}
+
+.sustain-text {
+    margin-left: 70px;
+    text-align: left; /* Align text to the left */
+}
+
+.sustain-text h2 {
+    margin-top: 0; /* Remove top margin on heading */
+    margin-bottom: 10px; /* Optional: Add a bit of space below the heading */
+}
+
+
+.sustain-text p {
+    margin-top: 0; /* Remove any default margin at the top */
+    margin-bottom: 0; /* Optional: Remove bottom margin for tight spacing */
+    text-align: left; /* Ensure paragraph text is left-aligned */
+    line-height: 1.6; /* Optional: Adjust line height for readability */
+    margin-bottom: 50px;
+}
+.commit-btn {
+    background-color: #042D45; /* Button color */
+    color: white; /* Text color inside the button */
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}

@@ -9,7 +9,10 @@ const AddToWeeklyShop = () => {
 
     return (
         <div className="stockist-section">
-            <h1>ADD US TO YOUR WEEKLY SHOP</h1>
+            <h1>ADD TO YOUR WEEKLY SHOP</h1>
+            <div className='purple-underline-container'>
+                <img src="public/purple-ul.svg" alt='purple underline' className="purple-underline"/>
+            </div>
             <div className="brand-list">
                 {stockists.map(stockist => (
                     <div key={stockist.id}>

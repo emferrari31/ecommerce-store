@@ -1,11 +1,16 @@
 .why-us-section {
-    padding: 20px;
+    padding: 50px;
+    background-color: #fff;
 }
 
+p {
+    text-align: center;
+}
 .reasons-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid */
     gap: 20px;
+    padding-top: 30px;
 }
 .reason {
     background-color: #fff;

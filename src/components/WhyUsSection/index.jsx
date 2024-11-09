@@ -11,8 +11,10 @@ const WhyUsSection = () => {
     return (
         <div className="why-us-section">
             <h1>WHY CANNED WINE CO.?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.</p>
+            <div className='purple-underline-container'>
+                <img src="public/purple-ul.svg" alt='purple underline' className="purple-underline"/>
+            </div>
+            <p>We elevate thoughtful connection between people, planet and place, through the appreciation of wine.</p>
             <div className="reasons-list">
                 {reasons.map(reason => (
                     <div key={reason.id}>

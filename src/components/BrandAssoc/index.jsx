@@ -11,7 +11,7 @@ const BrandAssoc = () => {
     ]
 
     return (
-        <div className="shop-section">
+        <div className="brand-assoc">
             <div className="brand-list">
                 {brandAssoc.map(brand => (
                     <div key={brand.id}>

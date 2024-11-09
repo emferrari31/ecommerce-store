@@ -5,9 +5,13 @@ import AboutUs from "./components/AboutUsPage";
 import HeroSection from "./components/HeroSection";
 import ShopSection from "./components/ShopSection";
 import BrandAssoc from "./components/BrandAssoc/index.jsx";
+import Footer from "./components/Footer/index.jsx";
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import AddToWeeklyShop from "./components/AddToWeeklyShop/index.jsx";
 import WhyUsSection from "./components/WhyUsSection/index.jsx";
+import {Suspense} from "react";
+import SustainabilitySection from "./components/SustainabilitySection/index.jsx";
+import IconBarFreeDelivery from "./components/IconBarFreeDelivery/index.jsx";
 
 function App() {
     return (
@@ -24,22 +28,28 @@ function AppWithRouting() {
         <div>
             <NavBar />  {/* This is here because we want it rendered on every page. */}
 
-            {location.pathname === "/" && <HeroSection />}  {/* Hero section only on the homepage */}
-            {location.pathname === "/" && <BrandAssoc />}  {/* Hero section only on the homepage */}
-            {location.pathname === "/" && <ShopSection />}  {/* Hero section only on the homepage */}
-            {location.pathname === "/" && <AddToWeeklyShop/>}  {/* Hero section only on the homepage */}
-            {location.pathname === "/" && <WhyUsSection/>}  {/* Hero section only on the homepage */}
+            {/* Render homepage components only on the "/" route */}
+            {location.pathname === "/" && (
+                <>
+                    <HeroSection />
+                    <BrandAssoc />
+                    <ShopSection />
+                    <AddToWeeklyShop />
+                    <WhyUsSection />
+                    <SustainabilitySection />
+                    <IconBarFreeDelivery />
+                    <Footer />
+                </>
+            )}
 
-
-
-
+            {/* Define the routes for other pages */}
             <Routes>
-                <Route path="/" element={<h3>Welcome to the Homepage!</h3>} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/about-us" element={<AboutUs />} />
             </Routes>
         </div>
     );
 }
+
 
 export default App;
