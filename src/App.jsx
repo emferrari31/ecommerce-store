@@ -9,31 +9,30 @@ import Footer from "./components/Footer/index.jsx";
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import AddToWeeklyShop from "./components/AddToWeeklyShop/index.jsx";
 import WhyUsSection from "./components/WhyUsSection/index.jsx";
-import {Suspense} from "react";
 import SustainabilitySection from "./components/SustainabilitySection/index.jsx";
 import IconBarFreeDelivery from "./components/IconBarFreeDelivery/index.jsx";
 
 function App() {
     return (
         <BrowserRouter>
-            <AppWithRouting /> {/* AppWithRouting is a child component that contains the useLocation hook */}
+            <AppWithRouting />
         </BrowserRouter>
     );
 }
 
 function AppWithRouting() {
-    const location = useLocation();  // Now useLocation() is inside BrowserRouter context
+    const location = useLocation();
 
     return (
         <div>
-            <NavBar />  {/* This is here because we want it rendered on every page. */}
+            <NavBar />
 
             {/* Render homepage components only on the "/" route */}
             {location.pathname === "/" && (
                 <>
                     <HeroSection />
                     <BrandAssoc />
-                    <ShopSection />
+                    <ShopSection maxProducts={4} /> {/* Show only 4 products on the homepage */}
                     <AddToWeeklyShop />
                     <WhyUsSection />
                     <SustainabilitySection />
@@ -50,6 +49,5 @@ function AppWithRouting() {
         </div>
     );
 }
-
 
 export default App;

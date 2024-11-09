@@ -1,17 +1,17 @@
 import OurWinesHeroSection from "../OurWinesHeroSection/index.jsx";
-import ShopSectionProductsPage from "../ShopSectionProductsPage/index.jsx";
+import ShopSection from "../ShopSection/index.jsx";
 import Footer from "../Footer/index.jsx";
 import IconBarFreeDelivery from "../IconBarFreeDelivery/index.jsx";
 
-const Products = () => {
+const ProductsPage = () => {
     return (
         <>
             <OurWinesHeroSection />
-            <ShopSectionProductsPage />
+            <ShopSection /> {/* Show all products on the shop page */}
             <IconBarFreeDelivery />
             <Footer />
         </>
     )
 }
 
-export default Products
+export default ProductsPage;
