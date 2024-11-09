@@ -1,0 +1,13 @@
+.what-people-section {
+    background-color: #f6edf6;
+    display: flex;
+    padding: 80px;
+    align-items: center;
+}
+
+.what-people-text h2 {
+    font-size: 3rem;
+}
+.what-people-text {
+    text-align: center;
+}

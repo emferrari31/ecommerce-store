@@ -32,11 +32,13 @@ const ShopSection = ({ maxProducts }) => {
         <div className="shop-section">
             <h1>SHOP THE RANGE</h1>
             <div className='purple-underline-container'>
-                <img src="public/purple-ul.svg" alt='purple underline' className="purple-underline" />
+                <img src="public/purple-ul.svg" alt='purple underline' className="purple-underline"/>
             </div>
             <p>
-                At Canned Wine Co. we have crafted a series of ranges that reflect the many differences wine has to offer.
-                From unusual grape varieties to classical wine regions, rustic styles to more refined examples, we want to introduce you to your new favourite wine.
+                At Canned Wine Co. we have crafted a series of ranges that reflect the many differences wine has to
+                offer.
+                From unusual grape varieties to classical wine regions, rustic styles to more refined examples, we want
+                to introduce you to your new favourite wine.
             </p>
 
             <div className="filter-section">
@@ -59,7 +61,7 @@ const ShopSection = ({ maxProducts }) => {
                 ) : (
                     productsToDisplay.map((product) => (
                         <div key={product.id} className="product-card">
-                            <img src={product.image} alt={product.name} className="product-image" />
+                            <img src={product.image} alt={product.name} className="product-image"/>
                             <h3>{product.name}</h3>
                             <h5>{product.price}</h5>
                         </div>
@@ -67,10 +69,12 @@ const ShopSection = ({ maxProducts }) => {
                 )}
             </div>
             {location.pathname === "/" && (
-            <div className='button-container'>
-                <button className="view-full-btn">View full collection</button>
-            </div>
+                <div className='button-container'>
+                    <button className="view-full-btn">View full collection</button>
+                </div>
             )}
+
+
         </div>
     );
 };
