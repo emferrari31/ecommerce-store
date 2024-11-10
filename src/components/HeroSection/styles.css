@@ -1,7 +1,7 @@
 /* Hero.css */
 .hero {
     position: relative;
-    background-image: url('public/pixabayWineB.jpg'); /* The background image */
+    background-image: url('public/oliveTree.jpg'); /* The background image */
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the background image */
     height: 100vh; /* Full viewport height */
@@ -33,12 +33,12 @@
     text-align: left;
 }
 
-.teal-underline-container {
+.gold-underline-container {
     display: flex;
     justify-content: center;
 }
 
-.teal-underline {
+.gold-underline {
     width: 100px;
 }
 
@@ -54,7 +54,7 @@
  }
 
 .cta-btn {
-    background-color: #042D45; /* Button color */
+    background-color: #A6B35C; /* Button color */
     color: white; /* Text color inside the button */
     border: none;
     padding: 12px 30px;
@@ -65,5 +65,5 @@
 }
 
 .cta-btn:hover {
-    background-color: #ff4500; /* Darker button color on hover */
+    background-color: #383818; /* Darker button color on hover */
 }

@@ -1,11 +1,14 @@
 /* Footer styles (Footer.css) */
 .footer {
-    background-color: #142c33;
+    background-color: #333333;
     padding: 50px;
     color: white;
     display: flex;
 }
 
+.footer h1, h2, h3, h4, h5 {
+    color: white;
+}
 .footer a {
     color: white !important;  /* Override default link color */
     text-decoration: none !important;  /* Remove underline */
@@ -16,7 +19,7 @@
 }
 
 .footer a:hover {
-    color: #ffccff !important;  /* Change color on hover */
+    color: #A6B35C !important;  /* Change color on hover */
 }
 
 .footer a:focus {
@@ -37,7 +40,8 @@
     flex-direction: column;
 }
 .col1 {
-    margin-left: 50px;
+    margin-left: 300px;
+
 }
 ul {
     flex-direction: column;

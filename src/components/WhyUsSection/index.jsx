@@ -2,19 +2,19 @@ import './styles.css';
 
 const WhyUsSection = () => {
     const reasons = [
-        {id: 1, name: 'PERFECTLY PORTIONED', description: 'Our cans hold the equivalent of one large glass, or two smaller glasses, allowing for a perfect serve every time.', image: "public/perfectlyPortioned.webp"},
-        {id: 2, name: 'WINEMAKER PARTNERSHIPS', description: 'We work with some of Europe’s finest winemakers. They make fantastic wines, we protect that quality.', image: "public/winemakerPartnership.webp"},
-        {id: 3, name: 'EXCITING GRAPE VARIETY', description: 'Discovery of some of the best and most unique wines that Europe has to offer, capturing a sense of place and time.', image: "public/excitingGrape.webp"},
-        {id: 4, name: 'INFINITELY RECYCLABLE', description: 'As a funding partner of Every Can Counts we help promote wider, responsible aluminium recycling.', image: "public/recycle.webp"},
+        {id: 1, name: 'SMALL-BATCH, HANDCRAFTED', description: 'Our olive oils are crafted in small batches, ensuring attention to detail and the highest quality in every bottle.', image: "public/smallBatch.svg"},
+        {id: 2, name: 'FAMILY FARMING TRADITIONS', description: 'We partner with local, family-owned farms in Tuscany, where generations of experience and passion produce the finest olives.', image: "public/familyFarm.svg"},
+        // {id: 3, name: 'PURELY TUSCAN', description: 'All our oils are made from hand-harvested olives grown in the rich soil of Tuscany, offering a taste of the region’s heritage and flavor.', image: "public/purelyTuscan.webp"},
+        {id: 4, name: 'SUSTAINABILITY COMMITMENT', description: 'We’re dedicated to protecting the land and its future by employing sustainable farming practices, ensuring quality and preserving the environment for generations to come.', image: "public/sustainability.svg"},
     ]
 
     return (
         <div className="why-us-section">
-            <h1>WHY CANNED WINE CO.?</h1>
-            <div className='purple-underline-container'>
-                <img src="public/purple-ul.svg" alt='purple underline' className="purple-underline"/>
+            <h1>WHY TERRA TUSCANA?</h1>
+            <div className='gold-underline-container'>
+                <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
             </div>
-            <p>We elevate thoughtful connection between people, planet and place, through the appreciation of wine.</p>
+            <p>At Terra Tuscana, we bring you the very essence of Tuscany through our small-batch olive oils—crafted with care, passion, and a deep respect for the land.</p>
             <div className="reasons-list">
                 {reasons.map(reason => (
                     <div key={reason.id}>
@@ -23,14 +23,12 @@ const WhyUsSection = () => {
                         <p>{reason.description}</p>
                     </div>
                 ))}
-
             </div>
             <div className='button-container'>
-                <button className="view-full-btn">View full collection</button>
+                <button className="view-full-btn">Explore Our Full Range</button>
             </div>
         </div>
     )
 }
 
-
-export default WhyUsSection
+export default WhyUsSection;

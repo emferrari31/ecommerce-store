@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import './styles.css';
 
 const productList = [
-    {id: 1, name: 'CANNED WINE CO. TASTING SELECTION', price: '£30.00', image: "/cannedWine.webp", collection: "varietal collection"},
-    {id: 2, name: 'SPARKLING CHARDONNAY 2022', price: 'From £18.00', image: "/cannedWine.webp", collection: "varietal collection"},
-    {id: 3, name: 'GRÜNER 2022', price: 'From £18.00', image: "/cannedWine.webp", collection: "varietal collection"},
-    {id: 4, name: 'VIOGNIER 2022', price: 'From £18.00', image: "/cannedWine.webp", collection: "varietal collection"},
-    {id: 5, name: 'GRENACHE ROSÉ 2023', price: 'From £18.00', image: "/cannedWine.webp", collection: "varietal collection"},
-    {id: 6, name: 'ST LAURENT 2020', price: 'From £18.00', image: "/cannedWine.webp", collection: "varietal collection"},
-    {id: 7, name: 'OLD VINE GARNACHA 2020', price: 'From £18.00', image: "/cannedWine.webp", collection: "varietal collection"},
-    {id: 8, name: 'GAMAY 2021 - LOIRE VALLEY', price: 'From £18.00', image: "/cannedWine.webp", collection: "heritage collection"},
-    {id: 9, name: 'VERDEJO 2022 - RUEDA', price: 'From £18.00', image: "/cannedWine.webp", collection: "heritage collection"},
-    {id: 10, name: 'CANNED WINE CO. MIXED SELECTION | THE NATIONAL GALLERY EDITION', price: 'From £18.00', image: "/cannedWine.webp", collection: "national gallery edition"},
-    {id: 11, name: 'GRÜNER 2021 | THE NATIONAL GALLERY EDITION', price: 'From £18.00', image: "/cannedWine.webp", collection: "national gallery edition"},
-    {id: 12, name: 'OLD VINE GARNACHA 2020 | THE NATIONAL GALLERY EDITION', price: 'From £18.00', image: "/cannedWine.webp", collection: "national gallery edition"},
-    {id: 13, name: 'GRENACHE ROSÉ 2021 | THE NATIONAL GALLERY EDITION', price: 'From £18.00', image: "/cannedWine.webp", collection: "national gallery edition"},
+    {id: 1, name: 'Tuscan Gold Extra Virgin Olive Oil', price: '£24.00', image: "/oliveOilProd.svg", collection: "Single Estate"},
+    {id: 2, name: 'La Verdiana - Organic Olive Oil 2023', price: '£18.00', image: "/oliveOilProd.svg", collection: "Organic Selection"},
+    {id: 3, name: 'Il Frantoio', price: '£22.50', image: "/oliveOilProd.svg", collection: "Limited Edition"},
+    {id: 4, name: 'Oliva Nera Reserve', price: '£28.00', image: "/oliveOilProd.svg", collection: "Single Estate"},
+    {id: 5, name: 'Cima di Cielo – Heritage Olive Oil', price: '£26.00', image: "/oliveOilProd.svg", collection: "Single Estate"},
+    {id: 6, name: 'Montalcino Blend', price: '£32.00', image: "/oliveOilProd.svg", collection: "Limited Edition"},
+    {id: 7, name: 'Luce di Toscana', price: '£21.00', image: "/oliveOilProd.svg", collection: "Organic Selection"},
+    {id: 8, name: 'Giallo del Chiant', price: '£18.00', image: "/oliveOilProd.svg", collection: "Organic Selection"},
+    {id: 9, name: 'Toscano Intenso ', price: '£24.00', image: "/oliveOilProd.svg", collection: "Single Estate"},
+    {id: 10, name: 'Raffinato di Toscana ', price: '£18.50', image: "/oliveOilProd.svg", collection: "Single Estate"},
+    {id: 11, name: 'Le Antiche Colline', price: '£26.00', image: "/oliveOilProd.svg", collection: "Limited Edition"},
+    {id: 12, name: 'Truffle Infused Olive Oil', price: '£35.00', image: "/oliveOilProd.svg", collection: "Organic Selection"},
+    {id: 13, name: 'Bella Vista ', price: '£32.00', image: "/oliveOilProd.svg", collection: "Organic Selection"},
 ];
 
 const ShopSection = ({ maxProducts }) => {
@@ -31,14 +31,15 @@ const ShopSection = ({ maxProducts }) => {
     return (
         <div className="shop-section">
             <h1>SHOP THE RANGE</h1>
-            <div className='purple-underline-container'>
-                <img src="public/purple-ul.svg" alt='purple underline' className="purple-underline"/>
+            <div className='gold-underline-container'>
+                <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
             </div>
             <p>
-                At Canned Wine Co. we have crafted a series of ranges that reflect the many differences wine has to
-                offer.
-                From unusual grape varieties to classical wine regions, rustic styles to more refined examples, we want
-                to introduce you to your new favourite wine.
+                At Terra Tuscana, we craft small-batch, artisanal olive oils that reflect the rich diversity of the
+                Tuscan landscape. From the robust flavors of rare olive varieties to the smooth, delicate notes of our
+                more refined blends, we aim to introduce you to the authentic taste of Tuscany. Each bottle of our
+                olive oil captures the essence of our sun-soaked groves, where tradition meets innovation to create
+                the finest oils for your kitchen. Discover your new favorite olive oil with Terra Tuscana.
             </p>
 
             <div className="filter-section">
@@ -48,9 +49,9 @@ const ShopSection = ({ maxProducts }) => {
                     onChange={(e) => setFilter(e.target.value)}
                 >
                     <option value="">All</option>
-                    <option value="varietal collection">Varietal Collection</option>
-                    <option value="heritage collection">Heritage Collection</option>
-                    <option value="national gallery edition">National Gallery Edition</option>
+                    <option value="Single Estate">Single Estate</option>
+                    <option value="Organic Selection">Organic Selection</option>
+                    <option value="Limited Edition">Limited Edition</option>
                 </select>
             </div>
 

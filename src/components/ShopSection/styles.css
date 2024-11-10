@@ -1,19 +1,20 @@
 /* ShopSection CSS */
 .shop-section {
     padding: 20px;
-    background-color: #fffdf6;
+    background-color: #fff;
 }
 
-h1 {
+.shop-section h1 {
     text-align: center;
+    color: #383818;
     /*padding-bottom: 30px;*/
 
 }
-.purple-underline-container {
+.gold-underline-container {
     display: flex;
     justify-content: center;
 }
-.purple-underline {
+.gold-underline {
     width: 100px;
 }
 
@@ -25,7 +26,7 @@ h1 {
     padding-right: 320px;
 }
 .shop-section h3 {
-    color: #3d7e8f;
+    color: #383818;
 }
 
 .product-list {
@@ -64,7 +65,7 @@ h1 {
 
 }
 .view-full-btn {
-    background-color: #042D45; /* Button color */
+    background-color: #A6B35C; /* Button color */
     color: white; /* Text color inside the button */
     border: none;
     padding: 12px 30px;
@@ -72,4 +73,7 @@ h1 {
     cursor: pointer;
     border-radius: 25px;
     transition: background-color 0.3s ease;
+}
+.view-full-btn:hover {
+    background-color: #383818; /* Darker button color on hover */
 }

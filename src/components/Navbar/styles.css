@@ -1,12 +1,12 @@
 /* NavBar.css */
 .logo-image {
-    height: 90px;  /* Adjust the size as needed */
+    height: 50px;  /* Adjust the size as needed */
     width: auto;   /* Maintain aspect ratio */
 }
 
 nav {
     /*background-color: hotpink;*/
-    padding: 0px 50px;
+    padding: 30px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,7 @@ li {
     text-decoration: none;
     font-size: 18px;
     margin-right: 20px;
-    color: black !important;
+    color: #A6B35C !important;
     text-decoration: none !important;
 }
 
@@ -47,7 +47,7 @@ li {
 }
 
 .links a:hover {
-    color: black !important;  /* Change color on hover */
+    color: #A6B35C !important;  /* Change color on hover */
 }
 
 .links a:focus {
@@ -69,5 +69,5 @@ i {
 }
 
 i:hover {
-    color: #ffccff;
+    color: #A6B35C;
 }

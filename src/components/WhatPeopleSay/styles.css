@@ -1,12 +1,14 @@
 .what-people-section {
-    background-color: #f6edf6;
+    background-color: #F4E8C1;
     display: flex;
     padding: 80px;
     align-items: center;
 }
 
 .what-people-text h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+    color: #383818;
+    margin: 0;
 }
 .what-people-text {
     text-align: center;

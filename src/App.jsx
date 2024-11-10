@@ -11,6 +11,7 @@ import AddToWeeklyShop from "./components/AddToWeeklyShop/index.jsx";
 import WhyUsSection from "./components/WhyUsSection/index.jsx";
 import SustainabilitySection from "./components/SustainabilitySection/index.jsx";
 import IconBarFreeDelivery from "./components/IconBarFreeDelivery/index.jsx";
+import WhatPeopleSay from "./components/WhatPeopleSay/index.jsx";
 
 function App() {
     return (
@@ -33,10 +34,9 @@ function AppWithRouting() {
                     <HeroSection />
                     <BrandAssoc />
                     <ShopSection maxProducts={4} /> {/* Show only 4 products on the homepage */}
-                    <AddToWeeklyShop />
+                    <WhatPeopleSay />
                     <WhyUsSection />
                     <SustainabilitySection />
-                    <IconBarFreeDelivery />
                     <Footer />
                 </>
             )}

@@ -5,14 +5,19 @@ const WhatPeopleSay = () => {
         <>
             <div className="what-people-section">
                 <div className="what-people-text">
-                    <h2>WHAT PEOPLE SAY</h2>
-                    <div className='purple-underline-container-sust'>
-                        <img src="public/purple-ul.svg" alt='purple underline' className="purple-underline"/>
+                    <h2>WHAT OUR CUSTOMERS SAY</h2>
+                    <div className='gold-underline-container-sust'>
+                        <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
                     </div>
-                    <p> Genuinely some of the loveliest, smoothest wine I have tasted. I can't believe it's
-                        in a can. An ideal serving so that good wine doesn't go to waste if you don't want
-                        to drink a whole bottle! Super speedy delivery too.</p>
-                    <p>- Hatty, Trustpilot</p>
+                    <p> "I've been using Terra Tuscana for a few months now, and it has completely elevated my cooking.
+                        The flavor is so fresh and vibrant, and I love knowing it’s sustainably produced. You can
+                        really taste the difference when it's made with such passion and tradition. Highly
+                        recommend!"</p>
+                    <p>- James G, London</p>
+                    <p>"I’ve tried many olive oils in the past, but nothing compares to Terra Tuscana. It’s rich,
+                        flavorful, and makes everything taste better. I love knowing it’s from small-scale, family-run
+                        farms in Tuscany. Truly the best quality olive oil out there!"</p>
+                    <p>- Lucy P, Wales</p>
                 </div>
             </div>
         </>
