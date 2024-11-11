@@ -6,8 +6,8 @@ const HeroSection = () => {
             <div className="hero-overlay">
                 <h1>EXQUISITE OLIVE OIL <br/>
                 HARVESTED FROM TUSCANY</h1>
-                <div className='teal-underline-container'>
-                    <img src="public/gold-ul.svg" alt='teal underline' className="gold-underline"/>
+                <div className='gold-underline-container'>
+                    <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
                 </div>
                 <p>At Terra Tuscana, we’re dedicated to bringing the authentic taste of Tuscany to your table.
                     Our olive oil is crafted with care, from handpicked olives grown in the rolling hills of

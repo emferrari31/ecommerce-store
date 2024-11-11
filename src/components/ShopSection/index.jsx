@@ -27,7 +27,15 @@ const ShopSection = ({ maxProducts }) => {
 
     return (
         <div className="shop-section">
-            <h1>SHOP THE RANGE</h1>
+            <h1>DISCOVER THE RANGE</h1>
+            <div className='gold-underline-container'>
+                <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
+            </div>
+            <p>At Terra Tuscana, we’ve curated a selection of olive oil ranges that capture the diverse essence of
+                Tuscany’s finest olives. From bold, robust flavors to delicate, organic varieties, our collection
+                showcases the rich traditions of Tuscan craftsmanship, offering something for every palate. Whether
+                you're drawn to the intense, full-bodied notes of single estate oils or the smooth elegance of our
+                organic selections, we’re here to help you discover your new favorite olive oil.</p>
             <div className="filter-section">
                 <h2>Filter by Collection</h2>
                 <select
@@ -47,15 +55,23 @@ const ShopSection = ({ maxProducts }) => {
                 ) : (
                     productsToDisplay.map((product) => (
                         <div key={product.id} className="product-card">
-                            <Link to={`/products/${product.name}`} style={{ textDecoration: 'none' }}>
-                                <img src={product.image} alt={product.name} className="product-image" />
+                            <Link to={`/products/${product.name}`} style={{textDecoration: 'none'}}>
+                                <img src={product.image} alt={product.name} className="product-image"/>
                                 <h3>{product.name}</h3>
                                 <h5>{`£${product.price.toFixed(2)}`}</h5>
                             </Link>
                         </div>
                     ))
+
                 )}
+
+
             </div>
+            {location.pathname === "/" && (
+            <div className='button-container'>
+                <button className="view-full-btn">Explore Our Full Range</button>
+            </div>
+                )}
         </div>
     );
 };

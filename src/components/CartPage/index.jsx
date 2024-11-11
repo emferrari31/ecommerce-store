@@ -18,7 +18,10 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, total }) => {
             <h1>Your Shopping Cart</h1>
 
             {cart.length === 0 ? (
-                <p>Your cart is empty. <Link to="/">Go back to shop</Link></p>
+                <p>Your cart is empty. <br/>
+                    <Link to="/products">
+                        <button className="go-back-to-shop-btn">Go back to shop</button>
+                    </Link></p>
             ) : (
                 <div>
                     <table className="cart-table">

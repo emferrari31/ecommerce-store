@@ -17,6 +17,7 @@ import { useState } from "react";
 
 function App() {
     const [cart, setCart] = useState([]);
+    const [alertMessage, setAlertMessage] = useState("");
 
     const addToBasket = (product) => {
         const productInCart = cart.find((item) => item.id === product.id);
@@ -31,13 +32,24 @@ function App() {
         } else {
             setCart([...cart, { ...product, quantity: 1 }]); // Add new item with quantity 1
         }
+
+        const alertText = `${product.name} has been added to your basket!`;
+        console.log('Alert message:', alertText); // Check if message is set correctly
+
+        setAlertMessage(alertText);
+
+        setTimeout(() => {
+            console.log("Clearing alert message...");
+            setAlertMessage("");  // Clear the alert message after 10 seconds
+        }, 3000);
     };
+    console.log("alertMessage in App:", alertMessage); // Log alertMessage here
+
 
     // Remove item from cart
     const removeFromCart = (id) => {
         setCart(cart.filter((item) => item.id !== id));
     };
-
     // Update item quantity
     const updateQuantity = (id, newQuantity) => {
         setCart(
@@ -46,6 +58,9 @@ function App() {
             )
         );
     };
+
+    // console.log("Cart Length Check:", cart);  // Add this line to verify cart state
+
 
     // Calculate total price
     const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
@@ -59,24 +74,30 @@ function App() {
                 removeFromCart={removeFromCart}
                 updateQuantity={updateQuantity}
                 total={total}
+                alertMessage={alertMessage}  // Pass alertMessage to AppWithRouting
+
             />
         </BrowserRouter>
     );
 }
 
-function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, total }) {
+function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, total, alertMessage }) {
     const location = useLocation();
+    console.log("alertMessage in AppWithRouting:", alertMessage); // Check if the alert message is passed correctly
 
     return (
         <div>
-            <NavBar />
+
+            <NavBar cartHasItems={cart.length > 0} alertMessage={alertMessage} />
+
+
 
             {/* Render homepage components only on the "/" route */}
             {location.pathname === "/" && (
                 <>
                     <HeroSection />
                     <BrandAssoc />
-                    <ShopSection maxProducts={4} addToBasket={addToBasket} /> {/* Pass addToBasket to ShopSection */}
+                    <ShopSection maxProducts={3} addToBasket={addToBasket} /> {/* Pass addToBasket to ShopSection */}
                     <WhatPeopleSay />
                     <WhyUsSection />
                     <SustainabilitySection />
@@ -96,6 +117,7 @@ function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, tot
                             removeFromCart={removeFromCart}
                             updateQuantity={updateQuantity}
                             total={total}
+
                         />
                     }
                 />
@@ -107,3 +129,4 @@ function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, tot
 }
 
 export default App;
+

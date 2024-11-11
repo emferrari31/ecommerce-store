@@ -1,11 +1,10 @@
 /* Hero.css */
 .hero {
     position: relative;
-    background-image: url('public/oliveTree.jpg'); /* The background image */
+    background-image: url('/oliveTree.jpg'); /* The background image */
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the background image */
     height: 100vh; /* Full viewport height */
-
     display: flex;
     justify-content: center;
     align-items: center;

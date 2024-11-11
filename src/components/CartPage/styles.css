@@ -1,5 +1,6 @@
 .cart-page h1 {
     color: #383818;
+    padding: 30px;
 }
 .cart-summary h3 {
     color: #383818;
@@ -11,7 +12,12 @@
     margin: 10px;
     align-items: center;
 }
-
+.cart-page p {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 60px;
+}
 .cart-table {
     width: 100%;
     border-collapse: collapse;
@@ -61,4 +67,17 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+}
+.go-back-to-shop-btn{
+    background-color: #A6B35C; /* Button color */
+    color: white; /* Text color inside the button */
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+.go-back-to-shop-btn:hover {
+    background-color: #383818; /* Darker button color on hover */
 }
