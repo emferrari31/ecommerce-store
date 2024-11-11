@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './styles.css';
 
 const CartPage = ({ cart, removeFromCart, updateQuantity, total }) => {
     // Handle removing item from cart
