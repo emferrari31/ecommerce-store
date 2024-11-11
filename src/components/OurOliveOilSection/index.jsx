@@ -3,7 +3,7 @@ const OurWinesHeroSection = () => {
     return (
         <section className="our-wines-hero">
             <div className="our-wines-hero-overlay">
-                <h1>Our Olive Oil</h1>
+                <h1>OUR OLIVE OIL</h1>
                 <div className='purple-underline-container'>
                     <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
                 </div>

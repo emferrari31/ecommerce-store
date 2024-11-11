@@ -17,7 +17,9 @@ const NavBar = () => {
             </ul>
             <div className="icons">
                 <i className='bx bx-search-alt-2'></i>
+                <Link to='/cart'>
                 <i className='bx bx-shopping-bag'></i>
+                </Link>
             </div>
 
         </nav>

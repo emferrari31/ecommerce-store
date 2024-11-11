@@ -1,0 +1,40 @@
+.product-detail-container {
+    padding-left: 130px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-color: #F7F7F7;
+    display: flex;
+}
+
+.product-detail h1,
+.product-detail h2,
+.product-detail h3,
+.product-detail h4,
+.product-detail h5,
+.product-detail p {
+     margin-left: 60px;
+     color: #383818;
+    text-align: left; /* Assuming you meant text-align */
+}
+
+.product-image {
+    width: 400px;
+}
+
+.add-to-basket-btn {
+    margin-left: 60px;
+    background-color: #A6B35C; /* Button color */
+    color: white; /* Text color inside the button */
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+
+.add-to-basket-btn:hover {
+    background-color: #383818; /* Darker button color on hover */
+}

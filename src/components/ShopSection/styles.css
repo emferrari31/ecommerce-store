@@ -30,7 +30,8 @@
 }
 
 .product-list {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid */
     gap: 20px;
 }
@@ -53,15 +54,19 @@
     margin: 10px 0;
 }
 
-.product-card p {
-    font-size: 1rem;
-    color: #555;
+.product-card h5 {
+    color: #383818;
 }
+
+/*.product-card p {*/
+/*    font-size: 1rem;*/
+/*    color: #555;*/
+/*}*/
 
 .button-container {
     display:flex;
     justify-content: center;
-    padding: 60px;
+    padding: 50px;
 
 }
 .view-full-btn {

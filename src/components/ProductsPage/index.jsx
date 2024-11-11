@@ -8,8 +8,6 @@ const ProductsPage = () => {
         <>
             <OurWinesHeroSection />
             <ShopSection /> {/* Show all products on the shop page */}
-            <IconBarFreeDelivery />
-            <Footer />
         </>
     )
 }

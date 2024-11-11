@@ -20,6 +20,7 @@
     margin-top: 0; /* Remove top margin on heading */
     margin-bottom: 10px; /* Optional: Add a bit of space below the heading */
     font-size: 3rem;
+    color: #383818;
 }
 
 .about-where-text p {
