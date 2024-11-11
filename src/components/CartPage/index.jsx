@@ -35,7 +35,7 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, total }) => {
                         {cart.map((item) => (
                             <tr key={item.id}>
                                 <td>{item.name}</td>
-                                <td>{item.price}</td>
+                                <td>{`£${item.price.toFixed(2)}`}</td>
                                 <td>
                                     <input
                                         type="number"
@@ -46,7 +46,7 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, total }) => {
                                         }
                                     />
                                 </td>
-                                <td>{(item.price * item.quantity).toFixed(2)}</td>
+                                <td>{`£${(item.price * item.quantity).toFixed(2)}`}</td>
                                 <td>
                                     <button onClick={() => handleRemove(item.id)}>Remove</button>
                                 </td>
