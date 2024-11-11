@@ -1,4 +1,6 @@
 import './styles.css';
+import {Link} from "react-router-dom";
+import React from "react";
 
 const WhyUsSection = () => {
     const reasons = [
@@ -14,7 +16,8 @@ const WhyUsSection = () => {
             <div className='gold-underline-container'>
                 <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
             </div>
-            <p>At Terra Tuscana, we bring you the very essence of Tuscany through our small-batch olive oils—crafted with care, passion, and a deep respect for the land.</p>
+            <p>At Terra Tuscana, we bring you the very essence of Tuscany through our small-batch olive oils—crafted
+                with care, passion, and a deep respect for the land.</p>
             <div className="reasons-list">
                 {reasons.map(reason => (
                     <div key={reason.id}>
@@ -24,8 +27,12 @@ const WhyUsSection = () => {
                     </div>
                 ))}
             </div>
-            <div className='button-container'>
-                <button className="view-full-btn">Explore Our Full Range</button>
+            <div className="button-container">
+                <button className="cta-btn">
+                    <Link to="/products" style={{textDecoration: 'none'}}>
+                        Explore Our Full Range
+                    </Link>
+                </button>
             </div>
         </div>
     )

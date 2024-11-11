@@ -68,10 +68,14 @@ const ShopSection = ({ maxProducts }) => {
 
             </div>
             {location.pathname === "/" && (
-            <div className='button-container'>
-                <button className="view-full-btn">Explore Our Full Range</button>
-            </div>
-                )}
+                <div className="button-container">
+                <button className="cta-btn">
+                    <Link to="/products" style={{textDecoration: 'none'}}>
+                        Explore Our Full Range
+                    </Link>
+                </button>
+                </div>
+            )}
         </div>
     );
 };
