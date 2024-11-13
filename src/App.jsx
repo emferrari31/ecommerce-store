@@ -98,9 +98,9 @@ function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, tot
                     <HeroSection />
                     <BrandAssoc />
                     <ShopSection maxProducts={3} addToBasket={addToBasket} /> {/* Pass addToBasket to ShopSection */}
-                    <WhatPeopleSay />
-                    <WhyUsSection />
-                    <SustainabilitySection />
+                    {/*<WhatPeopleSay />*/}
+                    {/*<WhyUsSection />*/}
+                    {/*<SustainabilitySection />*/}
                 </>
             )}
 
@@ -123,7 +123,7 @@ function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, tot
                 />
             </Routes>
 
-            <Footer />
+            {/*<Footer />*/}
         </div>
     );
 }

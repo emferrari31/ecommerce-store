@@ -27,12 +27,10 @@ const NavBar = ({ cartHasItems, alertMessage }) => {
                 </li>
             </ul>
             <div className="icons">
-                <i className='bx bx-search-alt-2'></i>
                 <Link to='/cart'>
                     <span className={`cart-status ${cartHasItems ? 'full' : 'empty'}`}>
                     {cartHasItems ? <i className='bx bxs-shopping-bag'></i> : <i className='bx bx-shopping-bag'></i>}
                     </span>
-                    {/*<i className='bx bx-shopping-bag'></i>*/}
                 </Link>
             </div>
 

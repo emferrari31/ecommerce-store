@@ -66,3 +66,35 @@
 .cta-btn:hover {
     background-color: #383818; /* Darker button color on hover */
 }
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Large text size for the heading */
+        margin: 0;
+        text-align: left;
+    }
+    .hero p {
+        font-size: 1.5rem; /* Subheading size */
+        margin: 20px 0;
+        text-align: left;
+    }
+}
+
+/*Mobile Screens*/
+@media only screen and (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.3rem; /* Large text size for the heading */
+        margin: 0;
+        text-align: left;
+    }
+    .hero p {
+        font-size: 0.9rem; /* Subheading size */
+        margin: 20px 0;
+        text-align: left;
+    }
+    .hero {
+        height: 80vh; /* Full viewport height */
+    }
+
+}

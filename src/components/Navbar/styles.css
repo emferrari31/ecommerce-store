@@ -1,11 +1,9 @@
-/* NavBar.css */
 .logo-image {
     height: 50px;  /* Adjust the size as needed */
     width: auto;   /* Maintain aspect ratio */
 }
 
 nav {
-    /*background-color: hotpink;*/
     padding: 30px 50px;
     display: flex;
     justify-content: space-between;
@@ -88,6 +86,65 @@ i:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 16px;
     width: auto;
-    /*z-index: 1000;*/
-    /*position: fixed;*/
+}
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .logo-image {
+        height: 30px;  /* Adjust the size as needed */
+        /*width: auto;   !* Maintain aspect ratio *!*/
+    }
+    nav {
+        padding: 10px 10px;
+        /*display: flex;*/
+        /*justify-content: space-between;*/
+        /*align-items: center;*/
+    }
+    .links a {
+        text-decoration: none;
+        font-size: 18px;
+        margin-right: 40px;
+        color: #A6B35C !important;
+        text-decoration: none !important;
+    }
+    /*li {*/
+    /*    margin-right: 30px;*/
+    /*}*/
+
+    /*.links a {*/
+    /*    text-decoration: none;*/
+    /*    font-size: 15px;*/
+    /*    margin-right: 20px;*/
+    /*    color: #A6B35C !important;*/
+    /*    text-decoration: none !important;*/
+    /*}*/
+
+}
+
+
+/*Mobile phone screens*/
+@media only screen and (max-width: 600px) {
+    .logo-image {
+        height: 20px;  /* Adjust the size as needed */
+        width: auto;   /* Maintain aspect ratio */
+    }
+    nav {
+        /*background-color: hotpink;*/
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li {
+        margin-right: 10px;
+    }
+
+    .links a {
+        text-decoration: none;
+        font-size: 15px;
+        margin-right: 20px;
+        color: #A6B35C !important;
+        text-decoration: none !important;
+    }
+
 }

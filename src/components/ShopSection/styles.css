@@ -1,4 +1,3 @@
-/* ShopSection CSS */
 .shop-section {
     padding: 20px;
     background-color: #fff;
@@ -8,12 +7,13 @@
     text-align: center;
     color: #383818;
     padding-top: 40px;
-
 }
+
 .gold-underline-container {
     display: flex;
     justify-content: center;
 }
+
 .gold-underline {
     width: 100px;
 }
@@ -22,35 +22,29 @@
     text-align: center;
     line-height: 31px; /* Optional: Adjust line height for readability */
     padding-bottom: 20px;
-    padding-left: 328px;
-    padding-right: 320px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 .shop-section h3 {
     color: #383818;
 }
+
 .filter-section h2 {
     color: #383818;
-
 }
 
 .product-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid */
-    gap: 20px;
+    justify-content: center; /* Center items horizontally */
+    gap: 10px;
 }
 
 .product-card {
-    padding: 15px;
     border-radius: 8px;
     text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.product-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 80%;
 }
 
 .product-card h3 {
@@ -85,4 +79,35 @@
 }
 .view-full-btn:hover {
     background-color: #383818; /* Darker button color on hover */
+}
+
+.product-image {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 300px; /* Max width for larger screens to prevent the image from being too large */
+    margin-bottom: 10px; /* Add some space below the image */
+}
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .shop-section p {
+        text-align: center;
+        line-height: 31px; /* Optional: Adjust line height for readability */
+        padding: 0px;
+    }
+}
+/*Mobile Screens*/
+@media only screen and (max-width: 600px) {
+    .shop-section p {
+        text-align: center;
+        line-height: 31px; /* Optional: Adjust line height for readability */
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .shop-section h3 {
+        color: #383818;
+        font-size: 1rem;
+    }
 }

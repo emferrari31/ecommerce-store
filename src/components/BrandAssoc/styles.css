@@ -11,3 +11,17 @@
 .brand-logo {
     width: 130px;
 }
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .brand-logo {
+        width: 45px;
+    }
+}
+
+/*Mobile Screens*/
+@media only screen and (max-width: 600px) {
+    .brand-logo {
+        width: 40px;
+    }
+}
