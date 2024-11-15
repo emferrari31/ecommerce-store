@@ -5,11 +5,11 @@ const AboutUsWhereItAllStarted = () => {
     return (
         <>
             <div className="about-where-section">
-                <img src="/public/italianWoman.svg" alt="The Founders of Canned Wine Co." className="circle-image"/>
+                <img src="italianWoman.svg" alt="The Founders of Terra Tuscana." className="circle-image"/>
                 <div className="about-where-text">
                     <h2>Hi, I'm Alessandra...</h2>
                     <div className='gold-underline-container-sust'>
-                        <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
+                        <img src="gold-ul.svg" alt='gold underline' className="gold-underline"/>
                     </div>
                     <p> I’m Alessandra, founder of Terra Tuscana. Raised in London by my Italian parents, I always felt
                         a deep yearning for the warmth and flavors of Tuscany. A dream nurtured over years of family

@@ -24,7 +24,7 @@ const ShopSection = ({ maxProducts }) => {
         <div className="shop-section">
             <h1>DISCOVER THE RANGE</h1>
             <div className='gold-underline-container'>
-                <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
+                <img src="gold-ul.svg" alt='gold underline' className="gold-underline"/>
             </div>
             <p>At Terra Tuscana, we’ve curated a selection of olive oil ranges that capture the diverse essence of
                 Tuscany’s finest olives. From bold, robust flavors to delicate, organic varieties, our collection

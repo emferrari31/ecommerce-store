@@ -5,7 +5,7 @@ const OurWinesHeroSection = () => {
             <div className="our-oil-hero-overlay">
                 <h1>OUR OLIVE OIL</h1>
                 <div className='gold-underline-container'>
-                    <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
+                    <img src="gold-ul.svg" alt='gold underline' className="gold-underline"/>
                 </div>
                 <p>At Terra Tuscana, our mission is to bring the finest, most authentic Tuscan olive oils to the world,
                     while staying committed to sustainability, quality, and the traditions of our land. We take pride

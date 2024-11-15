@@ -5,11 +5,11 @@ const SustainabilitySection = () => {
         <>
             <div className="sustain-section">
                 <video className="circle-video" autoPlay loop muted>
-                    <source src="/public/rootedinsustainability.mp4" type="video/mp4" />
+                    <source src="rootedinsustainability.mp4" type="video/mp4" />
                 </video>                <div className="sustain-text">
                     <h2>ROOTED IN SUSTAINABILITY</h2>
                     <div className='gold-underline-container-sust'>
-                        <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
+                        <img src="gold-ul.svg" alt='gold underline' className="gold-underline"/>
                     </div>
                     <p> At Terra Tuscana, sustainability is at the heart of everything we do. We understand the
                         responsibility we have as a business to make a meaningful, positive impact on both the

@@ -7,7 +7,7 @@ const WhatPeopleSay = () => {
                 <div className="what-people-text">
                     <h2>WHAT OUR CUSTOMERS SAY</h2>
                     <div className='gold-underline-container-sust'>
-                        <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
+                        <img src="gold-ul.svg" alt='gold underline' className="gold-underline"/>
                     </div>
                     <p className="quote1"> "I've been using Terra Tuscana for a few months now, and it has completely elevated my cooking.
                         The flavor is so fresh and vibrant, and I love knowing it’s sustainably produced. You can
