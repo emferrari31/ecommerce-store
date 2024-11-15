@@ -1,38 +1,55 @@
-h1 {
-    text-align: center;
-}
-p {
-    text-align: center;
-}
-
-/* ShopSection CSS */
 .shop-section {
     padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-section h1 {
+    text-align: center;
+    color: #383818;
+    padding-top: 40px;
+}
+
+.gold-underline-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gold-underline {
+    width: 100px;
+}
+
+.shop-section p {
+    text-align: center;
+    line-height: 31px;
+    padding-bottom: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.shop-section h3 {
+    color: #383818;
+}
+
+.filter-section {
+    margin-bottom: 10px;
+}
+
+.filter-section h2 {
+    color: #383818;
 }
 
 .product-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 20px;
 }
 
 .product-card {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-5px); /* Hover effect for the card */
-}
-
-.product-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
 }
 
 .product-card h3 {
@@ -40,7 +57,54 @@ p {
     margin: 10px 0;
 }
 
-.product-card p {
-    font-size: 1rem;
-    color: #555;
+.product-card h5 {
+    color: #383818;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.view-full-btn {
+    background-color: #A6B35C;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.view-full-btn:hover {
+    background-color: #383818;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .shop-section p {
+        text-align: center;
+        line-height: 31px;
+        padding: 0px;
+    }
+    .product-list {
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+/*Mobile Screens*/
+@media only screen and (max-width: 600px) {
+    .product-list {
+        flex-direction: column;
+        gap: 15px;
+    }
 }

@@ -3,5 +3,31 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: arial;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Poppins;
+}
+
+p {
+    font-family: Assistant;
+}
+
+a {
+    font-family: Assistant;
+    text-decoration: none; /* Removes underline */
+    color: white;
+}
+
+.assistant-font {
+                font-family: "Assistant", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
 }

@@ -1,0 +1,15 @@
+.stockist-section {
+    background-color: #F4E8C1;
+    padding: 50px;
+}
+
+.stockist-section h1 {
+    color: #383818;
+    text-align: center;
+}
+.brand-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}

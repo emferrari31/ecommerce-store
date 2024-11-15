@@ -1,23 +1,34 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-const NavBar = () => {
+const NavBar = ({ cartHasItems, alertMessage }) => {
+    useEffect(() => {
+    }, [cartHasItems, alertMessage]);
+
     return (
         <nav>
             <div className="logo">
-                <Link to='/'><img src="/logo.svg" alt="Logo of Site" className="logo-image" /></Link>
+                <Link to='/'><img src="/TerraTuscana.svg" alt="Logo of Site" className="logo-image" /></Link>
             </div>
+            {alertMessage && (
+                <div className="alert">
+                    {alertMessage}
+                </div>
+            )}
             <ul>
-                <li>
-                    {/*<Link to='/'>Home</Link>*/}
+                <li className="links">
+                    <Link to='/'>Home</Link>
                     <Link to='/products'>Shop</Link>
-                    <Link to='/about-us'>Learn</Link>
+                    <Link to='/about-us'>About</Link>
                 </li>
             </ul>
             <div className="icons">
-                <i className='bx bx-search-alt-2'></i>
-                <i className='bx bx-shopping-bag'></i>
+                <Link to='/cart'>
+                    <span className={`cart-status ${cartHasItems ? 'full' : 'empty'}`}>
+                    {cartHasItems ? <i className='bx bxs-shopping-bag'></i> : <i className='bx bx-shopping-bag'></i>}
+                    </span>
+                </Link>
             </div>
 
         </nav>

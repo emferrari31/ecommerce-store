@@ -1,12 +1,10 @@
-/* NavBar.css */
 .logo-image {
-    height: 90px;  /* Adjust the size as needed */
-    width: auto;   /* Maintain aspect ratio */
+    height: 50px;
+    width: auto;
 }
 
 nav {
-    /*background-color: hotpink;*/
-    padding: 10px 30px;
+    padding: 30px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,13 +32,25 @@ li {
     margin-right: 30px;
 }
 
-a {
-    color: white;
+.links a {
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
     margin-right: 20px;
-    color: black;
+    color: #A6B35C !important;
+    text-decoration: none !important;
+}
+
+.links a:visited {
+    color: black !important;  /* Visited links remain white */
+}
+
+.links a:hover {
+    color: #A6B35C !important;  /* Change color on hover */
+}
+
+.links a:focus {
+    color: black !important;  /* Focus color */
+    outline: none;  /* Remove default outline */
 }
 
 .icons {
@@ -57,5 +67,64 @@ i {
 }
 
 i:hover {
-    color: #ffccff;
+    color: #A6B35C;
+}
+
+.alert {
+    background-color: #383818;  /* Green background */
+    color: #fff;
+    border: 1px solid #383818;
+    font-family: Poppins;
+    padding: 20px 20px;
+    position: fixed;  /* Fixed to the top-right */
+    top: 10px;
+    right: 10px;
+    z-index: 1000;  /* Make sure it's above other content */
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: auto;
+}
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .logo-image {
+        height: 30px;
+    }
+    nav {
+        padding: 10px 10px;
+    }
+    .links a {
+        text-decoration: none;
+        font-size: 18px;
+        margin-right: 40px;
+        color: #A6B35C !important;
+        text-decoration: none !important;
+    }
+}
+
+/*Mobile phone screens*/
+@media only screen and (max-width: 600px) {
+    .logo-image {
+        height: 20px;
+        width: auto;
+        margin-right: 20px;
+    }
+    nav {
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li {
+        margin-right: 10px;
+    }
+    .links a {
+        text-decoration: none;
+        font-size: 13px;
+        margin-right: 20px;
+        color: #A6B35C !important;
+        text-decoration: none !important;
+    }
+
 }

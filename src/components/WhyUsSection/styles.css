@@ -1,0 +1,67 @@
+.why-us-section {
+    padding: 50px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.reasons-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* Media query targeting screens between 761px and 1149px wide */
+@media only screen and (min-width: 761px) and (max-width: 1149px) {
+    .reasons-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    .why-us-section {
+        padding: 40px;
+    }
+}
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .reasons-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    .why-us-section {
+        padding: 30px;
+    }
+}
+
+/*Mobile Screens*/
+@media only screen and (max-width: 600px) {
+    .reasons-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    .why-us-section {
+        padding: 20px;
+    }
+}

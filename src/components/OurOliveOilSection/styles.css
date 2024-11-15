@@ -1,0 +1,55 @@
+.our-oil-hero {
+    position: relative;
+    background-color: #F4E8C1;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.our-oil-hero-overlay h1 {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.our-oil-hero p {
+    text-align: center;
+    line-height: 31px;
+    padding-bottom: 20px;
+    padding-left: 328px;
+    padding-right: 320px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    text-align: left;
+}
+
+/* Media query targeting screens between 761px and 1149px wide */
+@media only screen and (min-width: 761px) and (max-width: 1149px) {
+    .our-oil-hero p {
+        text-align: center;
+        line-height: 31px;
+        padding-bottom: 0px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .our-oil-hero p {
+        text-align: center;
+        line-height: 31px;
+        padding-bottom: 0px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    /*!* Hero.css *!*/
+    .our-oil-hero {
+        height: 80vh;
+    }
+}

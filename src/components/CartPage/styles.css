@@ -1,0 +1,117 @@
+.cart-page h1 {
+    color: #383818;
+    padding: 30px;
+}
+.cart-summary h3 {
+    color: #383818;
+}
+
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+.cart-page p {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 60px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Assistant;
+}
+
+.cart-table th, .cart-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #383818;  /* Dark greenish background for table headers */
+    color: white;
+}
+
+.cart-table tr:nth-child(even) {
+    background-color: #f2f2f2;  /* Alternate row color for readability */
+}
+
+.cart-table tr:hover {
+    background-color: #ddd;  /* Hover effect on rows */
+}
+
+.cart-page .checkout-btn {
+    padding: 10px 20px;
+    background-color: #f39c12;  /* Bright goldish color */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    width: 50%
+}
+
+.cart-page .checkout-btn:hover {
+    background-color: #e67e22;
+    text-decoration: none;
+}
+
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.go-back-to-shop-btn{
+    background-color: #A6B35C;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-to-shop-btn:hover {
+    background-color: #383818;
+}
+
+/* Media query targeting screens between 761px and 1149px wide */
+@media only screen and (min-width: 761px) and (max-width: 1149px) {
+    .cart-table th, .cart-table td {
+        padding: 12px 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+}
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .cart-table th, .cart-table td {
+        padding: 12px 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+}
+
+/*Mobile Screens*/
+@media only screen and (max-width: 600px) {
+    .cart-table th, .cart-table td {
+        padding: 3px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    input {
+        width: 60px;
+    }
+}

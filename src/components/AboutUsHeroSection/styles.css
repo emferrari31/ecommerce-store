@@ -1,0 +1,46 @@
+/* Hero.css */
+.about-us-hero {
+    position: relative;
+    background-color: #A6B35C;
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    height: 70vh; /* Full viewport height */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-us-hero-overlay h1 {
+    font-size: 3rem;
+    margin: 10px;
+}
+.about-us-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+    color: white; /* White text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-us-hero h1 {
+    font-size: 3.5rem; /* Large text size for the heading */
+    margin: 0;
+    text-align: left;
+}
+
+.teal-underline-container {
+    display: flex;
+    justify-content: center;
+}
+
+.teal-underline {
+    width: 100px;
+}

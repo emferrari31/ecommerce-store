@@ -1,7 +1,7 @@
 import './styles.css';
 
 const BrandAssoc = () => {
-    const productList = [
+    const brandAssoc = [
         {id: 1, name: 'Brand1', image: "public/brandlogo1.svg"},
         {id: 2, name: 'Brand2', image: "public/brandlogo2.svg"},
         {id: 3, name: 'Brand3', image: "public/brandlogo3.svg"},
@@ -11,11 +11,11 @@ const BrandAssoc = () => {
     ]
 
     return (
-        <div className="shop-section">
+        <div className="brand-assoc">
             <div className="brand-list">
-                {productList.map(product => (
-                    <div key={product.id}>
-                        <img src={product.image} alt={product.name} className="brand-logo"/>
+                {brandAssoc.map(brand => (
+                    <div key={brand.id}>
+                        <img src={brand.image} alt={brand.name} className="brand-logo"/>
                     </div>
                 ))}
             </div>
