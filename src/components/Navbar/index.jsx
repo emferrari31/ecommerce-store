@@ -23,7 +23,7 @@ const NavBar = ({ cartHasItems, alertMessage }) => {
                 <li className="links">
                     <Link to='/'>Home</Link>
                     <Link to='/products'>Shop</Link>
-                    <Link to='/about-us'>Learn</Link>
+                    <Link to='/about-us'>About</Link>
                 </li>
             </ul>
             <div className="icons">

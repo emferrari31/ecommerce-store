@@ -7,33 +7,33 @@
     flex-direction: row;
     padding: 80px;
     background-color: #fff;
-    /*border: 1px solid black;*/
-    align-items: center; /* Align items vertically in the middle */
+    line-height: 1.6;
+    align-items: center;
 }
 
-/*.about-where-text {*/
-/*    margin-left: 70px;*/
-/*    text-align: left; !* Align text to the left *!*/
-/*}*/
+.about-where-text {
+    margin-left: 70px;
+    text-align: left; /* Align text to the left */
+}
 
-/*.about-where-text h2 {*/
-/*    margin-top: 0; !* Remove top margin on heading *!*/
-/*    margin-bottom: 10px; !* Optional: Add a bit of space below the heading *!*/
-/*    font-size: 3rem;*/
-/*    color: #383818;*/
-/*}*/
+.about-where-text h2 {
+    margin-top: 0; /* Remove top margin on heading */
+    margin-bottom: 10px; /* Optional: Add a bit of space below the heading */
+    font-size: 3rem;
+    color: #383818;
+}
 
-/*.about-where-text p {*/
-/*    margin-top: 0; !* Remove any default margin at the top *!*/
-/*    margin-bottom: 0; !* Optional: Remove bottom margin for tight spacing *!*/
-/*    text-align: left; !* Ensure paragraph text is left-aligned *!*/
-/*    line-height: 1.6; !* Optional: Adjust line height for readability *!*/
-/*    margin-bottom: 50px;*/
-/*}*/
+.about-where-text p {
+    margin-top: 0; /* Remove any default margin at the top */
+    margin-bottom: 0; /* Optional: Remove bottom margin for tight spacing */
+    text-align: left; /* Ensure paragraph text is left-aligned */
+    line-height: 1.6; /* Optional: Adjust line height for readability */
+    margin-bottom: 50px;
+}
 
-/*.gold-underline {*/
-/*    margin-bottom: 10px;*/
-/*}*/
+.gold-underline {
+    margin-bottom: 10px;
+}
 
 /* Media query targeting screens between 761px and 1149px wide */
 @media only screen and (min-width: 761px) and (max-width: 1149px) {
@@ -62,5 +62,8 @@
         display: flex;
         flex-direction: column;
         padding: 30px;
+    }
+    .about-where-text {
+        margin-left: 0px;
     }
 }
