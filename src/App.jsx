@@ -123,7 +123,7 @@ function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, tot
                 />
             </Routes>
 
-            {/*<Footer />*/}
+            <Footer />
         </div>
     );
 }

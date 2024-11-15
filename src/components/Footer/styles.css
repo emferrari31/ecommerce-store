@@ -1,4 +1,3 @@
-/* Footer styles (Footer.css) */
 .footer {
     background-color: #333333;
     padding: 50px;
@@ -6,9 +5,10 @@
     display: flex;
 }
 
-.footer h1, h2, h3, h4, h5 {
-    color: white;
-}
+/*.footer h1, h2, h3, h4, h5 {*/
+/*    color: white;*/
+/*}*/
+
 .footer a {
     color: white !important;  /* Override default link color */
     text-decoration: none !important;  /* Remove underline */
@@ -27,10 +27,11 @@
     outline: none;  /* Remove default outline */
 }
 
-/* Optional: Ensure paragraph text is aligned */
+/*!* Optional: Ensure paragraph text is aligned *!*/
 .col2 p {
     text-align: left;
 }
+
 .col3 {
     margin-left: 20px;
 }
@@ -39,20 +40,45 @@
     display: flex;
     flex-direction: column;
 }
+
 .col1 {
     margin-left: 300px;
-
 }
+
 ul {
     flex-direction: column;
 }
-.footer-logos {
-    display: flex;
-    justify-content: space-evenly;
+
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .footer {
+        background-color: #333333;
+        padding: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .col3 {
+        margin-left: 0px;
+    }
+    .col1 {
+        margin-left: 0px;
+    }
 }
-.butterfly-logo {
-    width: 70px;
-}
-.drink-aware-logo {
-    width: 170px;
+/*Mobile Screens*/
+@media only screen and (max-width: 600px) {
+    .footer {
+        background-color: #333333;
+        padding: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .col3 {
+        margin-left: 0px;
+    }
+    .col1 {
+        margin-left: 0px;
+    }
 }
