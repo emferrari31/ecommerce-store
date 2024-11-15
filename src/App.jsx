@@ -100,7 +100,7 @@ function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, tot
                     <ShopSection maxProducts={3} addToBasket={addToBasket} /> {/* Pass addToBasket to ShopSection */}
                     <WhatPeopleSay />
                     <WhyUsSection />
-                    {/*<SustainabilitySection />*/}
+                    <SustainabilitySection />
                 </>
             )}
 

@@ -1,7 +1,3 @@
-.circle-image {
-    width: 500px;
-    height: auto;
-}
 
 .sustain-section {
     display: flex;
@@ -26,16 +22,17 @@
 .circle-video {
     width: 500px;
     height: auto;
-
     border-radius: 50%; /* If you want a circular video */
-    object-fit: cover; /* Ensures the video covers the container without distortion */
+    /*object-fit: cover; !* Ensures the video covers the container without distortion *!*/
 }
+
 .sustain-text p {
     margin-top: 0; /* Remove any default margin at the top */
     text-align: left; /* Ensure paragraph text is left-aligned */
     line-height: 1.6; /* Optional: Adjust line height for readability */
     margin-bottom: 50px;
 }
+
 .commit-btn {
     background-color: #A6B35C; /* Button color */
     color: white; /* Text color inside the button */
@@ -46,6 +43,43 @@
     border-radius: 25px;
     transition: background-color 0.3s ease;
 }
+
 .commit-btn:hover {
     background-color: #383818; /* Darker button color on hover */
+}
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .sustain-section {
+        display: flex;
+        flex-direction: column;
+        /*padding: 80px;*/
+        background-color: #F7F7F7;
+        /*border: 1px solid black;*/
+        align-items: center; /* Align items vertically in the middle */
+    }
+    .circle-video {
+        width:500px;
+        height: auto;
+        border-radius: 50%; /* If you want a circular video */
+        padding-bottom: 20px;
+    }
+}
+/*Mobile Screens*/
+@media only screen and (max-width: 600px) {
+    .sustain-section {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #F7F7F7;
+        /*border: 1px solid black;*/
+        align-items: center; /* Align items vertically in the middle */
+    }
+
+    .circle-video {
+        width: 330px;
+        height: auto;
+        border-radius: 50%; /* If you want a circular video */
+        padding-bottom: 20px;
+    }
 }
