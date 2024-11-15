@@ -16,8 +16,10 @@ p {
 
 a {
     font-family: Assistant;
-
+    text-decoration: none; /* Removes underline */
+    color: white;
 }
+
 
 .assistant-font {
                 font-family: "Assistant", sans-serif;
