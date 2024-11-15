@@ -18,6 +18,7 @@
     gap: 100px;
     margin-top: 60px;
 }
+
 .cart-table {
     width: 100%;
     border-collapse: collapse;
@@ -42,6 +43,7 @@
 .cart-table tr:hover {
     background-color: #ddd;  /* Hover effect on rows */
 }
+
 .cart-page .checkout-btn {
     padding: 10px 20px;
     background-color: #f39c12;  /* Bright goldish color */
@@ -68,6 +70,7 @@
     text-align: center;
     align-items: center;
 }
+
 .go-back-to-shop-btn{
     background-color: #A6B35C; /* Button color */
     color: white; /* Text color inside the button */
@@ -78,6 +81,37 @@
     border-radius: 25px;
     transition: background-color 0.3s ease;
 }
+
 .go-back-to-shop-btn:hover {
     background-color: #383818; /* Darker button color on hover */
+}
+
+/* Media query targeting screens between 761px and 1149px wide */
+@media only screen and (min-width: 761px) and (max-width: 1149px) {
+    .cart-table th, .cart-table td {
+        padding: 12px 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+}
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .cart-table th, .cart-table td {
+        padding: 12px 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+}
+
+/*Mobile Screens*/
+@media only screen and (max-width: 600px) {
+    .cart-table th, .cart-table td {
+        padding: 3px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    input {
+        width: 60px;
+    }
 }

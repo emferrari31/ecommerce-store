@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './styles.css';
 
-const CartPage = ({ cart, removeFromCart, updateQuantity, total }) => {
+const CartPage = ({cart, removeFromCart, updateQuantity, total}) => {
     // Handle removing item from cart
     const handleRemove = (id) => {
         removeFromCart(id);
     };
-
     // Handle updating item quantity
     const handleQuantityChange = (id, newQuantity) => {
         updateQuantity(id, newQuantity);
@@ -16,7 +15,6 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, total }) => {
     return (
         <div className="cart-page">
             <h1>Your Shopping Cart</h1>
-
             {cart.length === 0 ? (
                 <p>Your cart is empty. <br/>
                     <Link to="/products">
@@ -57,7 +55,6 @@ const CartPage = ({ cart, removeFromCart, updateQuantity, total }) => {
                         ))}
                         </tbody>
                     </table>
-
                     <div className="cart-summary">
                         <h3>Total: £{total.toFixed(2)}</h3>
                         <button className="checkout-btn">
