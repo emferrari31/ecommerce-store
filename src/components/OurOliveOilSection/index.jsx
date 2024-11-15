@@ -14,7 +14,6 @@ const OurWinesHeroSection = () => {
                     commitment to excellence. Our olive oils are cold-pressed to preserve their natural flavors,
                     and are designed to elevate every meal with a taste of Tuscany’s heritage. We hope you experience
                     the passion and craftsmanship in every drop. </p>
-
             </div>
         </section>
     );

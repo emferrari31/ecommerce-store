@@ -9,7 +9,6 @@ const WhyUsSection = () => {
         // {id: 3, name: 'PURELY TUSCAN', description: 'All our oils are made from hand-harvested olives grown in the rich soil of Tuscany, offering a taste of the region’s heritage and flavor.', image: "public/purelyTuscan.webp"},
         {id: 4, name: 'SUSTAINABILITY COMMITMENT', description: 'We’re dedicated to protecting the land and its future by employing sustainable farming practices, ensuring quality and preserving the environment for generations to come.', image: "public/sustainability.svg"},
     ]
-
     return (
         <div className="why-us-section">
             <h1>WHY TERRA TUSCANA?</h1>

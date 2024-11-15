@@ -59,12 +59,7 @@ function App() {
         );
     };
 
-    // console.log("Cart Length Check:", cart);  // Add this line to verify cart state
-
-
-    // Calculate total price
     const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
-
     return (
         <BrowserRouter>
             <ScrollToTop />
@@ -74,7 +69,7 @@ function App() {
                 removeFromCart={removeFromCart}
                 updateQuantity={updateQuantity}
                 total={total}
-                alertMessage={alertMessage}  // Pass alertMessage to AppWithRouting
+                alertMessage={alertMessage}
 
             />
         </BrowserRouter>
@@ -104,7 +99,6 @@ function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, tot
                 </>
             )}
 
-            {/* Define the routes for other pages */}
             <Routes>
                 <Route path="/products" element={<Products addToBasket={addToBasket} />} />
                 <Route path="/products/:productName" element={<ProductDetail addToBasket={addToBasket} />} />
@@ -117,12 +111,10 @@ function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, tot
                             removeFromCart={removeFromCart}
                             updateQuantity={updateQuantity}
                             total={total}
-
                         />
                     }
                 />
             </Routes>
-
             <Footer />
         </div>
     );

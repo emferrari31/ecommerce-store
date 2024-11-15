@@ -7,7 +7,6 @@ const Footer = () => {
                 <div className="nameEthos">
                     <h2>Terra Tuscana</h2>
                     <p>We’re dedicated to bringing the authentic taste of Tuscany to your table.</p>
-
                 </div>
                 <div className='col1'>
                     <h4>FIND OUT MORE</h4>
