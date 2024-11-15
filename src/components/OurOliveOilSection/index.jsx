@@ -1,10 +1,10 @@
 import './styles.css';
 const OurWinesHeroSection = () => {
     return (
-        <section className="our-wines-hero">
-            <div className="our-wines-hero-overlay">
+        <section className="our-oil-hero">
+            <div className="our-oil-hero-overlay">
                 <h1>OUR OLIVE OIL</h1>
-                <div className='purple-underline-container'>
+                <div className='gold-underline-container'>
                     <img src="public/gold-ul.svg" alt='gold underline' className="gold-underline"/>
                 </div>
                 <p>At Terra Tuscana, our mission is to bring the finest, most authentic Tuscan olive oils to the world,
