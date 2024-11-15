@@ -1,17 +1,32 @@
 .iconsSection {
-    background-color: #fffdf6;
+    background-color: #fff;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;  /* Aligns items vertically in the center */
-    width: 100%;  /* Ensures the icons are spaced across the full width of the container */
     padding-top: 40px;
     padding-bottom: 40px;
+    border-top: solid #A6B35C 1px;
 }
-
 
 .icon1,.icon2, .icon3, .icons > div {
     display: flex;
-    flex-direction: column;  /* Stacks the icon and text vertically */
-    align-items: center;  /* Centers the icon and text horizontally */
-    text-align: center;  /* Ensures text is centered under the icon */
+    flex-direction: column;
+    align-items: center;
+    color: #383818;
+}
+
+/*Tablet screens*/
+@media only screen and (max-width: 768px) {
+    .iconsSection {
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+
+/*Mobile phone screens*/
+@media only screen and (max-width: 600px) {
+    .iconsSection {
+        padding: 10px;
+        font-size: 10px;
+    }
+
 }

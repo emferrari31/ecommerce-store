@@ -3,18 +3,18 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    text-align: center; /* Align text in the center */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .reasons-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid (adjust to fit better) */
-    gap: 30px; /* Increased gap for better spacing */
-    width: 100%; /* Full width to ensure it centers */
-    max-width: 1200px; /* Optional: Limit max width to avoid items stretching too far */
-    margin: 0 auto; /* Center the grid horizontally */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding-top: 30px;
 }
 
@@ -22,11 +22,11 @@
 @media only screen and (min-width: 761px) and (max-width: 1149px) {
     .reasons-list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Create a 3-column grid (adjust to fit better) */
-        gap: 30px; /* Increased gap for better spacing */
-        width: 100%; /* Full width to ensure it centers */
-        max-width: 1200px; /* Optional: Limit max width to avoid items stretching too far */
-        margin: 0 auto; /* Center the grid horizontally */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
         padding-top: 30px;
     }
     .why-us-section {
@@ -38,11 +38,11 @@
 @media only screen and (max-width: 768px) {
     .reasons-list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Create a 3-column grid (adjust to fit better) */
-        gap: 30px; /* Increased gap for better spacing */
-        width: 100%; /* Full width to ensure it centers */
-        max-width: 1200px; /* Optional: Limit max width to avoid items stretching too far */
-        margin: 0 auto; /* Center the grid horizontally */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
         padding-top: 30px;
     }
     .why-us-section {
@@ -54,11 +54,11 @@
 @media only screen and (max-width: 600px) {
     .reasons-list {
         display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Create a 3-column grid (adjust to fit better) */
-        gap: 30px; /* Increased gap for better spacing */
-        width: 100%; /* Full width to ensure it centers */
-        max-width: 1200px; /* Optional: Limit max width to avoid items stretching too far */
-        margin: 0 auto; /* Center the grid horizontally */
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
         padding-top: 30px;
     }
     .why-us-section {

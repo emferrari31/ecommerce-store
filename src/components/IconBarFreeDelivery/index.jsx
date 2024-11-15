@@ -5,15 +5,15 @@ const IconBarFreeDelivery = () => {
         <>
             <div className='iconsSection'>
             <div className="icon1">
-                <img src='box-open.svg' alt='box open icon'/>
+                <i className=' bx bx-package'></i>
                 <h3>FREE UK DELIVERY</h3>
             </div>
             <div className="icon2">
-                <img src='champagne-glasses.svg' alt='box open icon'/>
-                <h3>POSITIVE LUXURY ESC+ CERTIFIED</h3>
+                <i className='bx bx-world'></i>
+                <h3>PLANET-FRIENDLY PRACTICES</h3>
             </div>
             <div className="icon3">
-                <img src='leaf.svg' alt='box open icon'/>
+                <i className='bx bx-leaf'></i>
                 <h3>VEGAN FRIENDLY</h3>
             </div>
         </div>

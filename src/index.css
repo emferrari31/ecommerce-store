@@ -5,11 +5,10 @@ html, body {
     height: 100%;
 }
 
-
 h1, h2, h3, h4, h5 {
     font-family: Poppins;
-
 }
+
 p {
     font-family: Assistant;
 }
@@ -20,13 +19,12 @@ a {
     color: white;
 }
 
-
 .assistant-font {
                 font-family: "Assistant", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: 400;
                 font-style: normal;
-            }
+}
 
 .poppins-regular {
     font-family: "Poppins", serif;

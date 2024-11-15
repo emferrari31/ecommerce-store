@@ -22,7 +22,7 @@
 
 .shop-section p {
     text-align: center;
-    line-height: 31px; /* Optional: Adjust line height for readability */
+    line-height: 31px;
     padding-bottom: 20px;
     padding-left: 250px;
     padding-right: 250px;
@@ -43,14 +43,13 @@
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; /* Center items horizontally */
+    justify-content: space-evenly;
     gap: 20px;
 }
 
 .product-card {
     border-radius: 10px;
     text-align: center;
-    /*width: 80%;*/
 }
 
 .product-card h3 {
@@ -62,20 +61,15 @@
     color: #383818;
 }
 
-/*.product-card p {*/
-/*    font-size: 1rem;*/
-/*    color: #555;*/
-/*}*/
-
 .button-container {
-    display:flex;
+    display: flex;
     justify-content: center;
     padding: 50px;
-
 }
+
 .view-full-btn {
-    background-color: #A6B35C; /* Button color */
-    color: white; /* Text color inside the button */
+    background-color: #A6B35C;
+    color: white;
     border: none;
     padding: 12px 30px;
     font-size: 1.2rem;
@@ -83,22 +77,23 @@
     border-radius: 25px;
     transition: background-color 0.3s ease;
 }
+
 .view-full-btn:hover {
-    background-color: #383818; /* Darker button color on hover */
+    background-color: #383818;
 }
 
 .product-image {
     width: 100%;
-    height: auto; /* Maintain the aspect ratio */
-    max-width: 300px; /* Max width for larger screens to prevent the image from being too large */
-    margin-bottom: 10px; /* Add some space below the image */
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 10px;
 }
 
 /*Tablet screens*/
 @media only screen and (max-width: 768px) {
     .shop-section p {
         text-align: center;
-        line-height: 31px; /* Optional: Adjust line height for readability */
+        line-height: 31px;
         padding: 0px;
     }
     .product-list {
@@ -108,18 +103,6 @@
 }
 /*Mobile Screens*/
 @media only screen and (max-width: 600px) {
-    /*.shop-section p {*/
-    /*    text-align: center;*/
-    /*    line-height: 31px; !* Optional: Adjust line height for readability *!*/
-    /*    padding-bottom: 0px;*/
-    /*    padding-left: 0px;*/
-    /*    padding-right: 0px;*/
-    /*}*/
-
-    /*.shop-section h3 {*/
-    /*    color: #383818;*/
-    /*    font-size: 1rem;*/
-    /*}*/
     .product-list {
         flex-direction: column;
         gap: 15px;

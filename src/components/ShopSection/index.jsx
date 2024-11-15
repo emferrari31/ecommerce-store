@@ -14,17 +14,12 @@ const productList = [
     {id: 9, name: 'Il Frantoio', price: 22.50, image: "/oliveOilProd.svg", description: "Rich, fruity, and well-balanced extra virgin olive oil from the heart of Tuscany.", collection: "Limited Edition"},
     {id: 10, name: 'Il Frantoio', price: 22.50, image: "/oliveOilProd.svg", description: "Rich, fruity, and well-balanced extra virgin olive oil from the heart of Tuscany.", collection: "Limited Edition"}
 ];
-
-
 const ShopSection = ({ maxProducts }) => {
     const [filter, setFilter] = useState('');
-
     const filteredProducts = productList.filter((product) =>
         product.collection.toLowerCase().includes(filter.toLowerCase())
     );
-
     const productsToDisplay = maxProducts ? filteredProducts.slice(0, maxProducts) : filteredProducts;
-
     return (
         <div className="shop-section">
             <h1>DISCOVER THE RANGE</h1>
@@ -48,7 +43,6 @@ const ShopSection = ({ maxProducts }) => {
                     <option value="Limited Edition">Limited Edition</option>
                 </select>
             </div>
-
             <div className="product-list">
                 {productsToDisplay.length === 0 ? (
                     <p>No products found</p>
@@ -62,10 +56,7 @@ const ShopSection = ({ maxProducts }) => {
                             </Link>
                         </div>
                     ))
-
                 )}
-
-
             </div>
             {location.pathname === "/" && (
                 <div className="button-container">

@@ -60,7 +60,7 @@
 }
 
 .cart-page .checkout-btn:hover {
-    background-color: #e67e22;  /* Darker shade on hover */
+    background-color: #e67e22;
     text-decoration: none;
 }
 
@@ -72,8 +72,8 @@
 }
 
 .go-back-to-shop-btn{
-    background-color: #A6B35C; /* Button color */
-    color: white; /* Text color inside the button */
+    background-color: #A6B35C;
+    color: white;
     border: none;
     padding: 12px 30px;
     font-size: 1.2rem;
@@ -83,7 +83,7 @@
 }
 
 .go-back-to-shop-btn:hover {
-    background-color: #383818; /* Darker button color on hover */
+    background-color: #383818;
 }
 
 /* Media query targeting screens between 761px and 1149px wide */

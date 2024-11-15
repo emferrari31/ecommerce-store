@@ -4,10 +4,7 @@ import './styles.css';
 
 const NavBar = ({ cartHasItems, alertMessage }) => {
     useEffect(() => {
-        console.log("Alert Message in NavBar:", alertMessage); // Debug alertMessage
     }, [cartHasItems, alertMessage]);
-
-    // console.log("Cart has items in NavBar:", cartHasItems); // Debugging line
 
     return (
         <nav>

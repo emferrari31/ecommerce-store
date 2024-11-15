@@ -1,10 +1,9 @@
-/* Hero.css */
 .hero {
     position: relative;
-    background-image: url('/oliveTree.jpg'); /* The background image */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the background image */
-    height: 100vh; /* Full viewport height */
+    background-image: url('/oliveTree.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +16,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
-    color: white; /* White text color */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +26,7 @@
 }
 
 .hero h1 {
-    font-size: 3.5rem; /* Large text size for the heading */
+    font-size: 3.5rem;
     margin: 0;
     text-align: left;
 }
@@ -42,7 +41,7 @@
 }
 
 .hero p {
-    font-size: 1.5rem; /* Subheading size */
+    font-size: 1.5rem;
     margin: 20px 0;
     text-align: left;
 }
@@ -50,11 +49,11 @@
 .five-star-rating {
     width: 150px;
     padding-bottom: 40px;
- }
+}
 
 .cta-btn {
-    background-color: #A6B35C; /* Button color */
-    color: white; /* Text color inside the button */
+    background-color: #A6B35C;
+    color: white;
     border: none;
     padding: 12px 30px;
     font-size: 1.2rem;
@@ -64,18 +63,18 @@
 }
 
 .cta-btn:hover {
-    background-color: #383818; /* Darker button color on hover */
+    background-color: #383818;
 }
 
 /*Tablet screens*/
 @media only screen and (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem; /* Large text size for the heading */
+        font-size: 2.5rem;
         margin: 0;
         text-align: left;
     }
     .hero p {
-        font-size: 1.5rem; /* Subheading size */
+        font-size: 1.5rem;
         margin: 20px 0;
         text-align: left;
     }
@@ -84,17 +83,16 @@
 /*Mobile Screens*/
 @media only screen and (max-width: 600px) {
     .hero h1 {
-        font-size: 1.3rem; /* Large text size for the heading */
+        font-size: 1.3rem;
         margin: 0;
         text-align: left;
     }
     .hero p {
-        font-size: 0.9rem; /* Subheading size */
+        font-size: 0.9rem;
         margin: 20px 0;
         text-align: left;
     }
     .hero {
-        height: 80vh; /* Full viewport height */
+        height: 80vh;
     }
-
 }

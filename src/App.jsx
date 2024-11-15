@@ -12,8 +12,9 @@ import WhyUsSection from "./components/WhyUsSection";
 import SustainabilitySection from "./components/SustainabilitySection";
 import WhatPeopleSay from "./components/WhatPeopleSay";
 import ScrollToTop from "./components/ScrollToTop";
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { useState } from "react";
+import {BrowserRouter, Routes, Route, useLocation} from 'react-router-dom';
+import {useState} from "react";
+import IconBarFreeDelivery from "./components/IconBarFreeDelivery/index.jsx";
 
 function App() {
     const [cart, setCart] = useState([]);
@@ -25,26 +26,20 @@ function App() {
             setCart(
                 cart.map((item) =>
                     item.id === product.id
-                        ? { ...item, quantity: item.quantity + 1 } // Increment quantity
+                        ? {...item, quantity: item.quantity + 1} // Increment quantity
                         : item
                 )
             );
         } else {
-            setCart([...cart, { ...product, quantity: 1 }]); // Add new item with quantity 1
+            setCart([...cart, {...product, quantity: 1}]); // Add new item with quantity 1
         }
 
         const alertText = `${product.name} has been added to your basket!`;
-        console.log('Alert message:', alertText); // Check if message is set correctly
-
         setAlertMessage(alertText);
-
         setTimeout(() => {
-            console.log("Clearing alert message...");
-            setAlertMessage("");  // Clear the alert message after 10 seconds
+            setAlertMessage("");
         }, 3000);
     };
-    console.log("alertMessage in App:", alertMessage); // Log alertMessage here
-
 
     // Remove item from cart
     const removeFromCart = (id) => {
@@ -54,15 +49,16 @@ function App() {
     const updateQuantity = (id, newQuantity) => {
         setCart(
             cart.map((item) =>
-                item.id === id ? { ...item, quantity: newQuantity } : item
+                item.id === id ? {...item, quantity: newQuantity} : item
             )
         );
     };
 
     const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+
     return (
         <BrowserRouter>
-            <ScrollToTop />
+            <ScrollToTop/>
             <AppWithRouting
                 addToBasket={addToBasket}
                 cart={cart}
@@ -76,33 +72,29 @@ function App() {
     );
 }
 
-function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, total, alertMessage }) {
+function AppWithRouting({addToBasket, cart, removeFromCart, updateQuantity, total, alertMessage}) {
     const location = useLocation();
     console.log("alertMessage in AppWithRouting:", alertMessage); // Check if the alert message is passed correctly
 
     return (
         <div>
-
-            <NavBar cartHasItems={cart.length > 0} alertMessage={alertMessage} />
-
-
-
+            <NavBar cartHasItems={cart.length > 0} alertMessage={alertMessage}/>
             {/* Render homepage components only on the "/" route */}
             {location.pathname === "/" && (
                 <>
-                    <HeroSection />
-                    <BrandAssoc />
-                    <ShopSection maxProducts={3} addToBasket={addToBasket} /> {/* Pass addToBasket to ShopSection */}
-                    <WhatPeopleSay />
-                    <WhyUsSection />
-                    <SustainabilitySection />
+                    <HeroSection/>
+                    <BrandAssoc/>
+                    <ShopSection maxProducts={3} addToBasket={addToBasket}/> {/* Pass addToBasket to ShopSection */}
+                    <WhatPeopleSay/>
+                    <WhyUsSection/>
+                    <SustainabilitySection/>
                 </>
             )}
 
             <Routes>
-                <Route path="/products" element={<Products addToBasket={addToBasket} />} />
-                <Route path="/products/:productName" element={<ProductDetail addToBasket={addToBasket} />} />
-                <Route path="/about-us" element={<AboutUs />} />
+                <Route path="/products" element={<Products addToBasket={addToBasket}/>}/>
+                <Route path="/products/:productName" element={<ProductDetail addToBasket={addToBasket}/>}/>
+                <Route path="/about-us" element={<AboutUs/>}/>
                 <Route
                     path="/cart"
                     element={
@@ -115,10 +107,10 @@ function AppWithRouting({ addToBasket, cart, removeFromCart, updateQuantity, tot
                     }
                 />
             </Routes>
-            <Footer />
+            <IconBarFreeDelivery />
+            <Footer/>
         </div>
     );
 }
 
 export default App;
-

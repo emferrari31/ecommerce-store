@@ -13,14 +13,11 @@ const HeroSection = () => {
                     Our olive oil is crafted with care, from handpicked olives grown in the rolling hills of
                     Italy’s most beloved region.</p>
                 <img src="public/5stars.svg" alt="5 star rating image" className="five-star-rating"/>
-
-
                 <button className="cta-btn">
                     <Link to="/products" style={{ textDecoration: 'none' }}>
                         Shop all
                     </Link>
                 </button>
-
             </div>
         </section>
     );

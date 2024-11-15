@@ -2,6 +2,7 @@
     width: 500px;
     height: auto;
 }
+
 .about-where-section {
     display: flex;
     flex-direction: row;
@@ -13,21 +14,21 @@
 
 .about-where-text {
     margin-left: 70px;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .about-where-text h2 {
-    margin-top: 0; /* Remove top margin on heading */
-    margin-bottom: 10px; /* Optional: Add a bit of space below the heading */
+    margin-top: 0;
+    margin-bottom: 10px;
     font-size: 3rem;
     color: #383818;
 }
 
 .about-where-text p {
-    margin-top: 0; /* Remove any default margin at the top */
-    margin-bottom: 0; /* Optional: Remove bottom margin for tight spacing */
-    text-align: left; /* Ensure paragraph text is left-aligned */
-    line-height: 1.6; /* Optional: Adjust line height for readability */
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 1.6;
     margin-bottom: 50px;
 }
 

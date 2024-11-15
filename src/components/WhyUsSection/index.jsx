@@ -6,7 +6,6 @@ const WhyUsSection = () => {
     const reasons = [
         {id: 1, name: 'SMALL-BATCH, HANDCRAFTED', description: 'Our olive oils are crafted in small batches, ensuring attention to detail and the highest quality in every bottle.', image: "public/smallBatch.svg"},
         {id: 2, name: 'FAMILY FARMING TRADITIONS', description: 'We partner with local, family-owned farms in Tuscany, where generations of experience and passion produce the finest olives.', image: "public/familyFarm.svg"},
-        // {id: 3, name: 'PURELY TUSCAN', description: 'All our oils are made from hand-harvested olives grown in the rich soil of Tuscany, offering a taste of the region’s heritage and flavor.', image: "public/purelyTuscan.webp"},
         {id: 4, name: 'SUSTAINABILITY COMMITMENT', description: 'We’re dedicated to protecting the land and its future by employing sustainable farming practices, ensuring quality and preserving the environment for generations to come.', image: "public/sustainability.svg"},
     ]
     return (

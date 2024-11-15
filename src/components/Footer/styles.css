@@ -5,29 +5,24 @@
     display: flex;
 }
 
-/*.footer h1, h2, h3, h4, h5 {*/
-/*    color: white;*/
-/*}*/
-
 .footer a {
-    color: white !important;  /* Override default link color */
-    text-decoration: none !important;  /* Remove underline */
+    color: white !important;
+    text-decoration: none !important;
 }
 
 .footer a:visited {
-    color: white !important;  /* Visited links remain white */
+    color: white !important;
 }
 
 .footer a:hover {
-    color: #A6B35C !important;  /* Change color on hover */
+    color: #A6B35C !important;
 }
 
 .footer a:focus {
-    color: #ffccff !important;  /* Focus color */
-    outline: none;  /* Remove default outline */
+    color: #ffccff !important;
+    outline: none;
 }
 
-/*!* Optional: Ensure paragraph text is aligned *!*/
 .col2 p {
     text-align: left;
 }
@@ -48,7 +43,6 @@
 ul {
     flex-direction: column;
 }
-
 
 /*Tablet screens*/
 @media only screen and (max-width: 768px) {
